@@ -1,0 +1,160 @@
+/* TOP AREA */
+#top {
+    margin-bottom: 50px;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile .text-area h6 {
+    padding-bottom: 20px;
+    width: 80%;
+}
+
+.icons-profile {
+    height: 100px;
+    width: auto;
+}
+
+.weekly-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.white{
+    color: white;
+}
+
+.bottompd{
+    padding-bottom: 10px;
+}
+.white:hover{
+    color: white;
+
+}
+.btn-pages{
+    background-color: #96aa95;
+    color: #ffffff;
+}
+.btn-pages-current{
+    background-color: #e5f2e4;
+    color: #96aa95;
+}
+
+.btn-pages:hover{
+    background-color: #e5f2e4;
+    color: #96aa95;
+}
+
+.weekly-title {
+    color: var(--Text-dark);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.weekly-subtitle {
+    color: var(--Text-dark);
+    font-size: 16px;
+}
+
+.chart-gauge {
+    width: 300px;
+    height: auto;
+}
+
+.chart-first {
+    filter: invert(18%) sepia(77%) saturate(4804%) hue-rotate(354deg) brightness(96%) contrast(88%);
+}
+.chart-second {
+    filter: invert(78%) sepia(25%) saturate(1364%) hue-rotate(18deg) brightness(125%) contrast(80%);
+}
+.chart-third {
+    filter: invert(56%) sepia(42%) saturate(687%) hue-rotate(84deg) brightness(89%) contrast(92%);
+}
+
+/* BOTTOM AREA */
+.container-table {
+    min-height: 50vh;
+}
+
+section .table-title-area .title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;    
+}
+table thead tr th {
+    background-color: var(--green-light);
+    color: white;
+    border-top: none !important;
+}
+table tbody tr:nth-child(odd) {
+    background-color: var(--green-dark-table);
+    color: white;
+}
+table tbody tr:nth-child(even) {
+    background-color: var(--green-light);
+    color: white;
+}
+table tbody td img {
+    height: 25px;
+}
+table .fa-pencil:hover {
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1150px) { 
+    /* TOP AREA */
+    #top {
+        margin-bottom: 150px;
+    }
+    .profile {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .profile .text-area {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .icons-profile {
+        height: 65px;
+    }
+    .chart-gauge {
+        width: 200px;        
+    }
+
+    /* BOTTOM AREA */
+    .table-title-area {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        gap: 20px;
+    }
+ }

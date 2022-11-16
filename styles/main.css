@@ -1,0 +1,270 @@
+:root {
+	--Background: linear-gradient(119deg, #718570 32.17%, #94ad93 136.03%);
+	--Background-Opacity: rgba(113, 133, 112, 0.93);
+	--Text-dark: #447242;
+	--white: #ffffff;
+	--green-light: #96aa95;
+	--green-dark-table: #879f86;
+	--green-very-light: #e5f2e4;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-family: "Nunito";
+}
+
+.text-green {
+	color: var(--Text-dark) !important;
+}
+
+/*===== HOME HEADER =====*/
+
+header .bar {
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: auto;
+	padding: 20px;
+}
+header .bar h3 {
+	color: white;
+	letter-spacing: 1.5px;
+	font-size: 24px;
+}
+
+.button-white {
+	color: white !important;
+}
+
+header .bar a {
+	color: var(--Text-dark);
+	font-size: 16px;
+	text-decoration: none;
+	padding: 0 1rem;
+}
+
+.fa.fa-bell-o {
+	font-size: 20px;
+}
+
+.notification_button {
+	display: inline;
+}
+.notification_box {
+	padding: 20px;
+	margin-top: 20px;
+	position: absolute;
+	max-width: 350px;
+	width: 350px;
+	box-shadow: 10px 20px 40px 0px rgba(54, 60, 67, 0.1);
+	border-radius: 10px;
+	display: none;
+}
+
+.notification_box:after {
+	content: " ";
+	position: absolute;
+	right: 310px;
+	top: -15px;
+	border-top: none;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+	border-bottom: 15px solid rgba(54, 60, 67, 0.1);
+	box-shadow: 10px 20px 40px 0px rgba(54, 60, 67, 0.1);
+}
+
+.notification .badge {
+	top: -15px !important;
+	right: 15px;
+	padding: 2px 7px;
+	border-radius: 50%;
+	background-color: red;
+	color: white;
+	position: relative;
+	display: none;
+	margin-right: -1rem;
+}
+
+.notification_box {
+	z-index: 99;
+	background-color: white;
+}
+
+header .btn-outside {
+	color: white !important;
+	font-size: 16px !important;
+	text-decoration: none !important;
+	padding: 0.6rem 1rem !important;
+	background-color: #96aa95;
+	border-radius: 10px;
+}
+
+/*===== HOME =====*/
+
+.container.home {
+	display: flex;
+	height: 50vh;
+	width: 80%;
+	align-items: center;
+	justify-content: space-between;
+	margin: auto;
+}
+
+#green {
+	background: var(--Background);
+}
+
+section {
+	min-height: 50vh;
+	width: 100%;
+}
+section .container {
+	display: flex;
+	height: 50vh;
+	align-items: center;
+	justify-content: space-between;
+}
+section .container .text-area {
+	max-width: 500px !important;
+	color: white;
+}
+
+section .container .text-area h1 {
+	font-size: 32px;
+	font-weight: 700;
+}
+
+section .container .text-area h6 {
+	font-size: 16px;
+	font-weight: 400;
+	padding-top: 20px;
+}
+
+/*===== HOME SLOGAN =====*/
+
+.container-slogan {
+	margin: auto;
+	width: 80%;
+	align-items: center;
+	padding-top: 100px;
+}
+
+.container-slogan .text-area h2 {
+	color: #447242;
+	font-size: 36px;
+	text-align: center;
+	margin: auto;
+	font-weight: 600;
+}
+
+.container-slogan .text-area h6 {
+	color: #313131;
+	padding-top: 30px;
+	font-weight: 400;
+	font-size: 16px;
+	text-align: center;
+	width: 30%;
+	margin: auto;
+	align-items: center;
+}
+
+.container-slogan .text-area a {
+	color: white;
+	font-size: 16px;
+	padding: 0.6rem 1rem;
+	text-decoration: none;
+	background-color: #96aa95;
+	border-radius: 10px;
+}
+
+.container-slogan .text-area .button {
+	align-items: center;
+	padding-top: 40px;
+	margin: auto auto auto auto;
+	text-align: center;
+}
+
+.container-slogan .icon-area {
+	padding-top: 100px;
+	width: 50%;
+	text-align: center;
+	margin: auto;
+}
+
+.container-slogan .icon-area img:first-of-type {
+	float: left;
+}
+
+.container-slogan .icon-area img:last-of-type {
+	float: right;
+}
+
+/*===== HOME =====*/
+header .bar h3.greenTitle {
+	color: var(--Text-dark);
+}
+
+section .container .text-area.greenText {
+	color: var(--Text-dark);
+}
+
+/*===== RESPONSIVE =====*/
+
+@media screen and (max-width: 1150px) {
+	.container.home {
+		display: grid;
+		height: 50vh;
+		align-items: center;
+		justify-content: space-between;
+		gap: 50px;
+		margin: auto;
+		padding-top: 40px;
+	}
+
+	.img-area img {
+		max-width: 100%;
+	}
+
+	#green {
+		min-height: 80vh;
+	}
+
+	.container-slogan .text-area h6 {
+		width: 100%;
+	}
+
+	.container-slogan .icon-area {
+		width: 100%;
+		padding-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	header .bar {
+		display: block;
+		margin: auto;
+	}
+
+	.buttons {
+		margin-top: 20px;
+	}
+
+	header .bar h3 {
+		font-size: 22px;
+	}
+	header .bar {
+		width: 90%;
+		margin-bottom: 20px;
+	}
+	.notification_box {
+		width: 310px;
+	}
+
+	.notification_box:after {
+		right: 270px;
+	}
+}
